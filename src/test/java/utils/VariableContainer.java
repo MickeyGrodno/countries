@@ -1,11 +1,10 @@
-package ru.shabalin.utils;
+package utils;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class VariableContainer {
-    private Map<String, Object> map;
-
+    private final Map<String, Object> map;
 
     public VariableContainer() {
         map = new HashMap<>();
