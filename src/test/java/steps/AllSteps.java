@@ -40,7 +40,6 @@ public class AllSteps extends BaseTest {
     public void doRequestAndSaveResponse(String url, String countryCode, String responseVarName) {
         Response response = Utils.doGetRequestAndGetResponseBody(Utils.urlMaker(url, countryCode));
         scenario.write("The response body is stored in a variable " + responseVarName + "\n" + response.prettyPrint());
-
         variableContainer.setVar(responseVarName, response);
     }
 
