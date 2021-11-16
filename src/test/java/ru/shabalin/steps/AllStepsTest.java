@@ -1,16 +1,16 @@
-package steps;
+package ru.shabalin.steps;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.response.Response;
-import utils.Utils;
+import ru.shabalin.utils.Utils;
 
 import java.util.List;
 
 import static com.jayway.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.junit.Assert.assertFalse;
 
-public class AllSteps extends BaseTest {
+public class AllStepsTest extends BaseTest {
 
     @Given("^a request for a URL \"([^\"]*)\" with parameter \"([^\"]*)\" has been sent\\. List of bordering country codes saved to variable \"([^\"]*)\"$")
     public void requestOnUrlAndSaveBordersFromResponse(String url, String countryCode, String countriesVar) {

@@ -1,8 +1,8 @@
-package utils;
+package ru.shabalin.utils;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import steps.BaseTest;
+import ru.shabalin.steps.BaseTest;
 
 import java.io.IOException;
 import java.io.InputStream;
